@@ -11,5 +11,22 @@ namespace DonacionONG.model
         private string descripcionProyecto;
         private double costoProyecto;
 
+        public int IdProyecto 
+        {
+            get => idProyecto; set => idProyecto = value; 
+        }
+        public string NombreProyecto 
+        { 
+            get => nombreProyecto;
+            set => nombreProyecto = value; 
+        }
+        public string DescripcionProyecto 
+        { 
+            get => descripcionProyecto; set => descripcionProyecto = value; 
+        }
+        public double CostoProyecto 
+        { 
+            get => costoProyecto; set => costoProyecto = value; 
+        }
     }
 }

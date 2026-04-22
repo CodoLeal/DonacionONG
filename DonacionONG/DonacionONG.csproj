@@ -8,9 +8,4 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="dao\" />
-    <Folder Include="view\" />
-  </ItemGroup>
-
 </Project>

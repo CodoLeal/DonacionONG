@@ -5,10 +5,10 @@ using System.Text;
 
 namespace DonacionONG.dao
 {
-    internal class DAORegistroAporte : CRUD<RegistroAporte>
+    internal class DAORegistroAporte : CRUD<Aporte>
     {
 
-        public void actualizar(RegistroAporte t)
+        public void actualizar(Aporte t)
         {
             
         }
@@ -18,12 +18,12 @@ namespace DonacionONG.dao
          
         }
 
-        public void insertar(RegistroAporte t)
+        public void insertar(Aporte t)
         {
          
         }
 
-        public List<RegistroAporte> listar()
+        public List<Aporte> listar()
         {
             return null; 
         }

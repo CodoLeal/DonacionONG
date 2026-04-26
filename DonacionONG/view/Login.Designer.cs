@@ -28,19 +28,117 @@
         /// </summary>
         private void InitializeComponent()
         {
+            panel1 = new Panel();
+            panel2 = new Panel();
+            label1 = new Label();
+            txtUsername = new TextBox();
+            label2 = new Label();
+            label3 = new Label();
+            txtPass = new TextBox();
+            btnLogin = new Button();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(btnLogin);
+            panel1.Controls.Add(txtPass);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(txtUsername);
+            panel1.Controls.Add(panel2);
+            panel1.Location = new Point(0, 2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(633, 726);
+            panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(label1);
+            panel2.Location = new Point(3, 3);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(761, 100);
+            panel2.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(208, 45);
+            label1.Name = "label1";
+            label1.Size = new Size(128, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Sistema de donaciones";
+            label1.Click += label1_Click;
+            // 
+            // txtUsername
+            // 
+            txtUsername.Location = new Point(59, 322);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(395, 23);
+            txtUsername.TabIndex = 1;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(59, 294);
+            label2.Name = "label2";
+            label2.Size = new Size(47, 15);
+            label2.TabIndex = 2;
+            label2.Text = "Usuario";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(59, 377);
+            label3.Name = "label3";
+            label3.Size = new Size(67, 15);
+            label3.TabIndex = 3;
+            label3.Text = "Contraseña";
+            // 
+            // txtPass
+            // 
+            txtPass.Location = new Point(59, 411);
+            txtPass.Name = "txtPass";
+            txtPass.PasswordChar = '*';
+            txtPass.Size = new Size(395, 23);
+            txtPass.TabIndex = 4;
+            // 
+            // btnLogin
+            // 
+            btnLogin.Location = new Point(171, 475);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(119, 23);
+            btnLogin.TabIndex = 5;
+            btnLogin.Text = "Iniciar sesión";
+            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += button1_Click;
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(466, 600);
-            Margin = new Padding(3, 4, 3, 4);
+            ClientSize = new Size(632, 722);
+            Controls.Add(panel1);
             Name = "Login";
             Text = "Login";
+            Load += Login_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Panel panel1;
+        private Panel panel2;
+        private Label label1;
+        private TextBox txtUsername;
+        private TextBox txtPass;
+        private Label label3;
+        private Label label2;
+        private Button btnLogin;
     }
 }

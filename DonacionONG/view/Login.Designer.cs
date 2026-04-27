@@ -29,19 +29,20 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            btnLogin = new Button();
+            txtPass = new TextBox();
+            label3 = new Label();
+            label2 = new Label();
+            txtUsername = new TextBox();
             panel2 = new Panel();
             label1 = new Label();
-            txtUsername = new TextBox();
-            label2 = new Label();
-            label3 = new Label();
-            txtPass = new TextBox();
-            btnLogin = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.BackColor = SystemColors.ActiveBorder;
             panel1.Controls.Add(btnLogin);
             panel1.Controls.Add(txtPass);
             panel1.Controls.Add(label3);
@@ -53,12 +54,57 @@
             panel1.Size = new Size(633, 726);
             panel1.TabIndex = 0;
             // 
+            // btnLogin
+            // 
+            btnLogin.Location = new Point(171, 475);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(119, 23);
+            btnLogin.TabIndex = 5;
+            btnLogin.Text = "Iniciar sesión";
+            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += button1_Click;
+            // 
+            // txtPass
+            // 
+            txtPass.Location = new Point(59, 411);
+            txtPass.Name = "txtPass";
+            txtPass.PasswordChar = '*';
+            txtPass.Size = new Size(395, 23);
+            txtPass.TabIndex = 4;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(59, 377);
+            label3.Name = "label3";
+            label3.Size = new Size(67, 15);
+            label3.TabIndex = 3;
+            label3.Text = "Contraseña";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(59, 294);
+            label2.Name = "label2";
+            label2.Size = new Size(47, 15);
+            label2.TabIndex = 2;
+            label2.Text = "Usuario";
+            // 
+            // txtUsername
+            // 
+            txtUsername.BackColor = SystemColors.ControlLightLight;
+            txtUsername.ForeColor = SystemColors.InactiveCaptionText;
+            txtUsername.Location = new Point(59, 322);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(395, 23);
+            txtUsername.TabIndex = 1;
+            // 
             // panel2
             // 
             panel2.Controls.Add(label1);
             panel2.Location = new Point(3, 3);
             panel2.Name = "panel2";
-            panel2.Size = new Size(761, 100);
+            panel2.Size = new Size(627, 223);
             panel2.TabIndex = 0;
             // 
             // label1
@@ -70,49 +116,6 @@
             label1.TabIndex = 0;
             label1.Text = "Sistema de donaciones";
             label1.Click += label1_Click;
-            // 
-            // txtUsername
-            // 
-            txtUsername.Location = new Point(59, 322);
-            txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(395, 23);
-            txtUsername.TabIndex = 1;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(59, 294);
-            label2.Name = "label2";
-            label2.Size = new Size(47, 15);
-            label2.TabIndex = 2;
-            label2.Text = "Usuario";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(59, 377);
-            label3.Name = "label3";
-            label3.Size = new Size(67, 15);
-            label3.TabIndex = 3;
-            label3.Text = "Contraseña";
-            // 
-            // txtPass
-            // 
-            txtPass.Location = new Point(59, 411);
-            txtPass.Name = "txtPass";
-            txtPass.PasswordChar = '*';
-            txtPass.Size = new Size(395, 23);
-            txtPass.TabIndex = 4;
-            // 
-            // btnLogin
-            // 
-            btnLogin.Location = new Point(171, 475);
-            btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(119, 23);
-            btnLogin.TabIndex = 5;
-            btnLogin.Text = "Iniciar sesión";
-            btnLogin.UseVisualStyleBackColor = true;
-            btnLogin.Click += button1_Click;
             // 
             // Login
             // 

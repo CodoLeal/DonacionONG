@@ -32,6 +32,7 @@
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
+            lblValidacion = new Label();
             label4 = new Label();
             lblTitulo = new Label();
             label1 = new Label();
@@ -67,6 +68,7 @@
             // 
             // panel2
             // 
+            panel2.Controls.Add(lblValidacion);
             panel2.Controls.Add(label4);
             panel2.Controls.Add(lblTitulo);
             panel2.Controls.Add(label1);
@@ -79,6 +81,17 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(576, 710);
             panel2.TabIndex = 0;
+            // 
+            // lblValidacion
+            // 
+            lblValidacion.Font = new Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblValidacion.ForeColor = Color.Red;
+            lblValidacion.Location = new Point(24, 415);
+            lblValidacion.Name = "lblValidacion";
+            lblValidacion.Size = new Size(535, 21);
+            lblValidacion.TabIndex = 8;
+            lblValidacion.Text = "*****";
+            lblValidacion.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
@@ -117,7 +130,7 @@
             btnLogin.BackColor = Color.FromArgb(192, 0, 192);
             btnLogin.Font = new Font("Segoe UI Variable Display Semib", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLogin.ForeColor = SystemColors.ButtonHighlight;
-            btnLogin.Location = new Point(88, 413);
+            btnLogin.Location = new Point(92, 475);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(414, 45);
             btnLogin.TabIndex = 5;
@@ -140,7 +153,7 @@
             // 
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.DarkMagenta;
-            label3.Location = new Point(24, 312);
+            label3.Location = new Point(24, 344);
             label3.Name = "label3";
             label3.Size = new Size(535, 22);
             label3.TabIndex = 3;
@@ -149,7 +162,7 @@
             // 
             // txtPass
             // 
-            txtPass.Location = new Point(24, 337);
+            txtPass.Location = new Point(24, 369);
             txtPass.Name = "txtPass";
             txtPass.PasswordChar = '*';
             txtPass.Size = new Size(535, 23);
@@ -192,5 +205,6 @@
         private PictureBox pictureBox1;
         private Label label4;
         private Label label1;
+        private Label lblValidacion;
     }
 }

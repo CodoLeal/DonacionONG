@@ -10,14 +10,23 @@ namespace DonacionONG
         public Login()
         {
             InitializeComponent();
-            precargarUsuarios();
+            customProperties();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            lblValidacion.Hide();
             string usuario = txtUsername.Text;
             string pass = txtPass.Text;
 
+
+            if(usuario.Equals("") || pass.Equals("")){
+                lblValidacion.Text = "No pueden haber campos vacios.";
+                lblValidacion.Show();
+                return;
+            }
+
+            
             foreach (Usuario u in listaUsuarios)
             {
                 if (u.NombreUsuario.Equals(usuario) && u.Password.Equals(pass))
@@ -25,9 +34,13 @@ namespace DonacionONG
                     Dashboard ds = new Dashboard();
                     ds.Show();
                     this.Hide();
+                } else
+                {
+                    lblValidacion.Text = "Usuario o contraseña incorrectos.";
+                    lblValidacion.Show();
                 }
             }
-        }
+        }   
 
 
         private void precargarUsuarios()
@@ -38,6 +51,12 @@ namespace DonacionONG
 
             listaUsuarios.Add(u1);
             listaUsuarios.Add(u2);
+        }
+
+        void customProperties()
+        {
+            lblValidacion.Hide();
+            precargarUsuarios();
         }
     }
 }

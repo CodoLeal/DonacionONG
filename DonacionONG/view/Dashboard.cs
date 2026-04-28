@@ -1,4 +1,5 @@
 ﻿using DonacionONG.model;
+using DonacionONG.view.formularios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -66,7 +67,20 @@ namespace DonacionONG.view
 
         private void donantesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            FormDonante formDonante = new FormDonante();
+            formDonante.Show();
+        }
 
+        private void aportesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAporte formAporte = new FormAporte();
+            formAporte.Show();
+        }
+
+        private void proyectosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormProyecto formProyecto = new FormProyecto();
+            formProyecto.Show();
         }
     }
 }

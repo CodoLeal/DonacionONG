@@ -29,22 +29,24 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            panel2 = new Panel();
             dataGridView1 = new DataGridView();
-            label1 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            label2 = new Label();
-            textBox3 = new TextBox();
-            label3 = new Label();
+            panel2 = new Panel();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
             textBox4 = new TextBox();
             label4 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            textBox3 = new TextBox();
+            label3 = new Label();
+            textBox2 = new TextBox();
+            label2 = new Label();
+            textBox1 = new TextBox();
+            label1 = new Label();
+            label5 = new Label();
+            label6 = new Label();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -55,8 +57,21 @@
             panel1.Size = new Size(444, 230);
             panel1.TabIndex = 0;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(0, 0);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(444, 230);
+            dataGridView1.TabIndex = 0;
+            // 
             // panel2
             // 
+            panel2.Controls.Add(label6);
+            panel2.Controls.Add(label5);
             panel2.Controls.Add(button3);
             panel2.Controls.Add(button2);
             panel2.Controls.Add(button1);
@@ -73,67 +88,32 @@
             panel2.Size = new Size(444, 299);
             panel2.TabIndex = 1;
             // 
-            // dataGridView1
+            // button3
             // 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(444, 230);
-            dataGridView1.TabIndex = 0;
+            button3.Location = new Point(54, 216);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 39);
+            button3.TabIndex = 10;
+            button3.Text = "Guardar";
+            button3.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // button2
             // 
-            label1.BorderStyle = BorderStyle.FixedSingle;
-            label1.Location = new Point(54, 85);
-            label1.Name = "label1";
-            label1.Size = new Size(116, 23);
-            label1.TabIndex = 0;
-            label1.Text = "Nombre";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
+            button2.Location = new Point(189, 216);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 39);
+            button2.TabIndex = 9;
+            button2.Text = "Actualizar";
+            button2.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // button1
             // 
-            textBox1.Location = new Point(176, 86);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(216, 23);
-            textBox1.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(176, 115);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(216, 23);
-            textBox2.TabIndex = 3;
-            // 
-            // label2
-            // 
-            label2.BorderStyle = BorderStyle.FixedSingle;
-            label2.Location = new Point(54, 114);
-            label2.Name = "label2";
-            label2.Size = new Size(116, 23);
-            label2.TabIndex = 2;
-            label2.Text = "Rut";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(176, 144);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(216, 23);
-            textBox3.TabIndex = 5;
-            // 
-            // label3
-            // 
-            label3.BorderStyle = BorderStyle.FixedSingle;
-            label3.Location = new Point(54, 143);
-            label3.Name = "label3";
-            label3.Size = new Size(116, 23);
-            label3.TabIndex = 4;
-            label3.Text = "Teléfono";
-            label3.TextAlign = ContentAlignment.MiddleCenter;
+            button1.Location = new Point(317, 216);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 39);
+            button1.TabIndex = 8;
+            button1.Text = "Borrar";
+            button1.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
@@ -152,32 +132,76 @@
             label4.Text = "Monto";
             label4.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // textBox3
             // 
-            button1.Location = new Point(317, 216);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 39);
-            button1.TabIndex = 8;
-            button1.Text = "Borrar";
-            button1.UseVisualStyleBackColor = true;
+            textBox3.Location = new Point(176, 144);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(216, 23);
+            textBox3.TabIndex = 5;
             // 
-            // button2
+            // label3
             // 
-            button2.Location = new Point(189, 216);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 39);
-            button2.TabIndex = 9;
-            button2.Text = "Actualizar";
-            button2.UseVisualStyleBackColor = true;
+            label3.BorderStyle = BorderStyle.FixedSingle;
+            label3.Location = new Point(54, 143);
+            label3.Name = "label3";
+            label3.Size = new Size(116, 23);
+            label3.TabIndex = 4;
+            label3.Text = "Teléfono";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // button3
+            // textBox2
             // 
-            button3.Location = new Point(54, 216);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 39);
-            button3.TabIndex = 10;
-            button3.Text = "Guardar";
-            button3.UseVisualStyleBackColor = true;
+            textBox2.Location = new Point(176, 115);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(216, 23);
+            textBox2.TabIndex = 3;
+            // 
+            // label2
+            // 
+            label2.BorderStyle = BorderStyle.FixedSingle;
+            label2.Location = new Point(54, 114);
+            label2.Name = "label2";
+            label2.Size = new Size(116, 23);
+            label2.TabIndex = 2;
+            label2.Text = "Rut";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(176, 86);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(216, 23);
+            textBox1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.BorderStyle = BorderStyle.FixedSingle;
+            label1.Location = new Point(54, 85);
+            label1.Name = "label1";
+            label1.Size = new Size(116, 23);
+            label1.TabIndex = 0;
+            label1.Text = "Nombre";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            label5.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Location = new Point(54, 20);
+            label5.Name = "label5";
+            label5.Size = new Size(129, 32);
+            label5.TabIndex = 11;
+            label5.Text = "Gestión de";
+            label5.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            label6.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(189, 20);
+            label6.Name = "label6";
+            label6.Size = new Size(203, 43);
+            label6.TabIndex = 12;
+            label6.Text = "Donantes";
+            label6.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // FormDonante
             // 
@@ -189,9 +213,9 @@
             Name = "FormDonante";
             Text = "FormDonante";
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -211,5 +235,7 @@
         private Button button3;
         private Button button2;
         private Button button1;
+        private Label label6;
+        private Label label5;
     }
 }

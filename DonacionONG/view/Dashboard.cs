@@ -58,5 +58,15 @@ namespace DonacionONG.view
             tablaDonantes.DataSource = bindingList;
             tablaDonantes.AutoGenerateColumns = true;
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void donantesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

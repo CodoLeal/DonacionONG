@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DonacionONG.model
 {
-    internal class Donante
+    public class Donante
     {
         private int idDonante;
         private string nombreDonante;

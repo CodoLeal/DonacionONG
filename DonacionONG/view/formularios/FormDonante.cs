@@ -17,6 +17,7 @@ namespace DonacionONG.view.formularios
         public FormDonante()
         {
             InitializeComponent();
+            customProperties();
             
         }
 
@@ -24,9 +25,15 @@ namespace DonacionONG.view.formularios
 
 
 
+        private void customProperties()
+        {
+            
+        }
 
-
-
+        public void cargarDonantes(List<Donante> listaDonantes)
+        {
+            this.listaDonantes = listaDonantes;
+        }
 
     }
 }

@@ -117,12 +117,14 @@
             aportesToolStripMenuItem.Name = "aportesToolStripMenuItem";
             aportesToolStripMenuItem.Size = new Size(224, 26);
             aportesToolStripMenuItem.Text = "Aportes";
+            aportesToolStripMenuItem.Click += aportesToolStripMenuItem_Click;
             // 
             // proyectosToolStripMenuItem
             // 
             proyectosToolStripMenuItem.Name = "proyectosToolStripMenuItem";
             proyectosToolStripMenuItem.Size = new Size(224, 26);
             proyectosToolStripMenuItem.Text = "Proyectos";
+            proyectosToolStripMenuItem.Click += proyectosToolStripMenuItem_Click;
             // 
             // panel3
             // 
